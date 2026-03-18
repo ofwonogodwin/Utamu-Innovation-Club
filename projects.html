@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - UTAMU Innovation Club</title>
+    <meta name="description"
+        content="Explore our innovative projects, from AI solutions to startup incubation. Discover how UTAMU Innovation Club is shaping the future through technology.">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/projects.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e5ff8bc16b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Modern Navigation -->
+    <nav class="modern-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="UTAMU Innovation Club Logo" />
+                <span>UTAMU Innovation Club</span>
+            </div>
+
+            <ul class="nav-menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="code-of-conduct.html">Code of Conduct</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fas fa-times close-menu" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars menu-toggle" onclick="openmenu()"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section class="projects-hero">
+        <div class="hero-background">
+            <div class="background-image"></div>
+            <div class="gradient-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Our Projects</h1>
+            <p class="hero-subtitle">
+                Discover the groundbreaking innovations and impactful solutions created by our
+                vibrant community of makers, developers, and entrepreneurs.
+            </p>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Active Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Contributors</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="featured-projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    Highlighting our most impactful and innovative projects that are making a difference.
+                </p>
+            </div>
+
+            <div class="featured-grid">
+                <div class="featured-card spotlight">
+                    <div class="featured-image">
+                        <img src="images/AI.jpeg" alt="AI for Social Good">
+                        <div class="featured-overlay">
+                            <div class="featured-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Social Impact</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>AI for Social Good</h3>
+                        <p>Developing intelligent solutions to address healthcare, education, and environmental
+                            challenges in Uganda.</p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>12 Contributors</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-star"></i>
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="images/stud1campus.jpeg" alt="Startup Accelerator">
+                        <div class="featured-overlay">
+                            <div class="featured-tags">
+                                <span class="tag">Incubation</span>
+                                <span class="tag">Startup</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Startup Accelerator Program</h3>
+                        <p>Nurturing early-stage tech startups with mentorship, resources, and funding opportunities.
+                        </p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>8 Startups</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Growing</span>
+                            </div>
+                        </div>
+                        <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Categories Section -->
+    <section class="project-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Categories</h2>
+                <p class="section-subtitle">
+                    Explore our diverse range of projects across different technology domains and impact areas.
+                </p>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Tech Incubation Category -->
+                <div class="category-section">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Tech Incubation</h3>
+                        <p>Supporting innovative startups and entrepreneurial ventures</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/stud1campus.jpeg" alt="Startup Accelerator">
+                                <div class="project-overlay">
+                                    <div class="project-actions">
+                                        <a href="#" class="action-btn"><i class="fas fa-eye"></i></a>
+                                        <a href="#" class="action-btn"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Startup Accelerator</h4>
+                                <p>Comprehensive 3-month program providing mentorship, resources, and networking
+                                    opportunities for early-stage tech startups.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Business</span>
+                                    <span class="tech-tag">Mentorship</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/AI.jpeg" alt="Innovation Lab">
+                                <div class="project-overlay">
+                                    <div class="project-actions">
+                                        <a href="#" class="action-btn"><i class="fas fa-eye"></i></a>
+                                        <a href="#" class="action-btn"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Innovation Lab</h4>
+                                <p>State-of-the-art facility equipped with modern tools and technologies for rapid
+                                    prototyping and product development.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Hardware</span>
+                                    <span class="tech-tag">Prototyping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training Programs Category -->
+                <div class="category-section">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Training Bootcamps</h3>
+                        <p>Intensive skill-building programs for the next generation</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/AI3.jpeg" alt="Cybersecurity Bootcamp">
+                                <div class="project-overlay">
+                                    <div class="project-actions">
+                                        <a href="#" class="action-btn"><i class="fas fa-eye"></i></a>
+                                        <a href="#" class="action-btn"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Cybersecurity Bootcamp</h4>
+                                <p>Comprehensive training program covering ethical hacking, network security, and
+                                    digital forensics with hands-on labs.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Security</span>
+                                    <span class="tech-tag">Networking</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/stud2pc.jpeg" alt="Full Stack Development">
+                                <div class="project-overlay">
+                                    <div class="project-actions">
+                                        <a href="#" class="action-btn"><i class="fas fa-eye"></i></a>
+                                        <a href="#" class="action-btn"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Full Stack Development</h4>
+                                <p>Intensive coding bootcamp covering modern web technologies from frontend frameworks
+                                    to backend APIs and databases.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events Category -->
+                <div class="category-section">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Events & Competitions</h3>
+                        <p>Exciting challenges and networking opportunities</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/stud1pc.jpeg" alt="Hackathon">
+                                <div class="project-overlay">
+                                    <div class="project-actions">
+                                        <a href="#" class="action-btn"><i class="fas fa-eye"></i></a>
+                                        <a href="#" class="action-btn"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>UTAMU Hackathon</h4>
+                                <p>48-hour coding marathon where teams compete to build innovative solutions addressing
+                                    real-world problems in Uganda.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Competition</span>
+                                    <span class="tech-tag">Innovation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/AI2.jpeg" alt="Tech Meetup">
+                                <div class="project-overlay">
+                                    <div class="project-actions">
+                                        <a href="#" class="action-btn"><i class="fas fa-eye"></i></a>
+                                        <a href="#" class="action-btn"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Tech Meetups</h4>
+                                <p>Monthly networking events connecting developers, entrepreneurs, industry experts, and
+                                    investors in the tech ecosystem.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Networking</span>
+                                    <span class="tech-tag">Community</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Impact</h2>
+                <p class="section-subtitle">
+                    Measuring success through the positive change we create in our community.
+                </p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="impact-number">500+</div>
+                    <div class="impact-label">Students Trained</div>
+                    <p>Skilled in cutting-edge technologies</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="impact-number">25</div>
+                    <div class="impact-label">Startups Launched</div>
+                    <p>Creating jobs and solving problems</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="impact-number">150+</div>
+                    <div class="impact-label">Jobs Created</div>
+                    <p>Direct and indirect employment</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="impact-number">30+</div>
+                    <div class="impact-label">Industry Partners</div>
+                    <p>Collaborating for greater impact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Join Our Innovation Community?</h2>
+                <p>
+                    Whether you're a student, developer, entrepreneur, or simply passionate about technology,
+                    there's a place for you in our vibrant community.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpg" alt="UTAMU Innovation Club Logo" />
+                        <span>UTAMU Innovation Club</span>
+                    </div>
+                    <p>Empowering innovators to transform ideas into impact.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="code-of-conduct.html">Code of Conduct</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Project Categories</h4>
+                    <ul>
+                        <li><a href="#">Tech Incubation</a></li>
+                        <li><a href="#">Training Bootcamps</a></li>
+                        <li><a href="#">AI & Machine Learning</a></li>
+                        <li><a href="#">Web Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>UTAMU Campus, Bushenyi, Uganda</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>projects@utamuinnovationhub.org</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+256 123 456 789</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 UTAMU Innovation Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu functionality
+        function openmenu() {
+            const menu = document.getElementById('menu');
+            if (menu) {
+                menu.style.right = '0';
+            }
+        }
+
+        function closemenu() {
+            const menu = document.getElementById('menu');
+            if (menu) {
+                menu.style.right = '-300px';
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add floating animation to shapes
+        document.addEventListener('DOMContentLoaded', function () {
+            const shapes = document.querySelectorAll('.floating-shapes .shape');
+            shapes.forEach((shape, index) => {
+                shape.style.animationDelay = `${index * 0.5}s`;
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.project-card, .featured-card, .impact-card, .category-section').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Project card hover effects
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+
+</html>

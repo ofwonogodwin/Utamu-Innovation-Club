@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - UTAMU Innovation Club</title>
+    <meta name="description"
+        content="Explore photos from our events, workshops, hackathons, and community activities at UTAMU Innovation Club.">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/gallery.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e5ff8bc16b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Modern Navigation -->
+    <nav class="modern-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="UTAMU Innovation Club Logo" />
+                <span>UTAMU Innovation Club</span>
+            </div>
+
+            <ul class="nav-menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="code-of-conduct.html">Code of Conduct</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fas fa-times close-menu" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars menu-toggle" onclick="openmenu()"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="hero-background">
+            <div class="background-image"></div>
+            <div class="gradient-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Our Gallery</h1>
+            <p class="hero-subtitle">
+                Moments that matter. Explore our journey through innovation, collaboration, and community building.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i>
+                    All Events
+                </button>
+                <button class="filter-btn" data-filter="workshops">
+                    <i class="fas fa-laptop-code"></i>
+                    Workshops
+                </button>
+                <button class="filter-btn" data-filter="hackathons">
+                    <i class="fas fa-trophy"></i>
+                    Hackathons
+                </button>
+                <button class="filter-btn" data-filter="meetups">
+                    <i class="fas fa-users"></i>
+                    Meetups
+                </button>
+                <button class="filter-btn" data-filter="community">
+                    <i class="fas fa-heart"></i>
+                    Community
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Workshop Images -->
+                <div class="gallery-item" data-category="workshops">
+                    <div class="gallery-card">
+                        <img src="images/AI.jpeg" alt="AI Workshop">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>AI for Social Good</h3>
+                                <p class="event-category">Workshop</p>
+                                <p class="event-date">November 2024</p>
+                                <button class="view-btn" onclick="openLightbox(0)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="workshops">
+                    <div class="gallery-card">
+                        <img src="images/AI2.jpeg" alt="Tech Workshop">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Machine Learning Bootcamp</h3>
+                                <p class="event-category">Workshop</p>
+                                <p class="event-date">October 2024</p>
+                                <button class="view-btn" onclick="openLightbox(1)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="workshops">
+                    <div class="gallery-card">
+                        <img src="images/AI3.jpeg" alt="Cybersecurity Training">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Cybersecurity Training</h3>
+                                <p class="event-category">Workshop</p>
+                                <p class="event-date">September 2024</p>
+                                <button class="view-btn" onclick="openLightbox(2)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Images -->
+                <div class="gallery-item" data-category="community">
+                    <div class="gallery-card">
+                        <img src="images/stud1campus.jpeg" alt="Campus Innovation">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Campus Innovation Day</h3>
+                                <p class="event-category">Community</p>
+                                <p class="event-date">December 2024</p>
+                                <button class="view-btn" onclick="openLightbox(3)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hackathons">
+                    <div class="gallery-card">
+                        <img src="images/stud1pc.jpeg" alt="Hackathon">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>UTAMU Hackathon 2024</h3>
+                                <p class="event-category">Hackathon</p>
+                                <p class="event-date">August 2024</p>
+                                <button class="view-btn" onclick="openLightbox(4)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="community">
+                    <div class="gallery-card">
+                        <img src="images/stud2pc.jpeg" alt="Coding Session">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Collaborative Coding</h3>
+                                <p class="event-category">Community</p>
+                                <p class="event-date">July 2024</p>
+                                <button class="view-btn" onclick="openLightbox(5)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="meetups">
+                    <div class="gallery-card">
+                        <img src="Guys.jpeg" alt="Tech Meetup">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Innovation Team Meetup</h3>
+                                <p class="event-category">Meetup</p>
+                                <p class="event-date">November 2024</p>
+                                <button class="view-btn" onclick="openLightbox(6)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="meetups">
+                    <div class="gallery-card">
+                        <img src="clubimage.jpeg" alt="Community Gathering">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Community Building Event</h3>
+                                <p class="event-category">Meetup</p>
+                                <p class="event-date">October 2024</p>
+                                <button class="view-btn" onclick="openLightbox(7)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    <i class="fas fa-images"></i>
+                    Load More Photos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" onclick="changeLightboxImage(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" onclick="changeLightboxImage(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCategory"></p>
+                <p id="lightboxDate"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpg" alt="UTAMU Innovation Club Logo" />
+                        <span>UTAMU Innovation Club</span>
+                    </div>
+                    <p>Empowering innovators to transform ideas into impact.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/utamuinnovationhub" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/utamuinnovation" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/utamu-innovation-club" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ofwonogodwin" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="code-of-conduct.html">Code of Conduct</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>UTAMU Campus, Bushenyi, Uganda</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>utamuinnovationclub@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+256 704 376 894</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 UTAMU Innovation Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="index.JS"></script>
+    <script src="styles/gallery.js"></script>
+</body>
+
+</html>
